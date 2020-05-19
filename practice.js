@@ -83,9 +83,13 @@ var devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck(name){
-  if(name== Steven){
+  if(name == Steven){
     return 'What is up Steven?'
-  }else
+  }else if( name == Brayan){
+    return 'Hey Bryan'
+  }else{
+    return "Cool name " + name
+  }
 }
 //////////////////PROBLEM 11////////////////////
 
@@ -93,12 +97,18 @@ function nameCheck(name){
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(num , num){
+  if(isNaN(num)){
+    console.log("Enter a number!");
+  }else{
+    return num+num
+  }
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add( 3 , 4 )
 
 //////////////////PROBLEM 12////////////////////
 
@@ -109,7 +119,17 @@ function nameCheck(name){
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color){
+  if(color.toString() === "red"){
+    return "Red is a great color"
+  }else if(color.toString() === "green"){
+    return "Green is a solid favorite color"
+  }else if(color.toString() === "black"){
+    return "So trendy"
+  }else{
+    return 'you need to evaluate your favorite color choice'
+  }
+}
 
 //////////////////PROBLEM 13////////////////////
 
